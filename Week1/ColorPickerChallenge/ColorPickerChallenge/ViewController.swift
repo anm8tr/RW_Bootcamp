@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSlider: UISlider!
     
     //@IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var colorNameTextField: UILabel!
     
     @IBOutlet weak var redLabelValue: UILabel!
     @IBOutlet weak var greenLabelValue: UILabel!
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         redSlider.tag = 1
         greenSlider.tag = 2
         blueSlider.tag = 3
@@ -61,6 +63,28 @@ class ViewController: UIViewController {
         
         
 }
+    
+    @IBAction func setColorAlertWithText(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Set Color", message: "Enter a name for the color", preferredStyle: .alert)
+        alert.view.tintColor = .systemBlue
+        
+        alert.addTextField { textField in
+            textField.placeholder = "Enter color name"
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+       let confirmAction = UIAlertAction(title: "OK", style: .default) { _ in
+        self.colorNameTextField.text = alert.textFields?.first?.text ??  "Please enter a name"
+            }
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        
+        present(alert, animated: true, completion: nil)
+            
+    }
+    
     
     
 }

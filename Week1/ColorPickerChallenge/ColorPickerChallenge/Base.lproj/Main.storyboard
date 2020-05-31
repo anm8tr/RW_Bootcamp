@@ -95,6 +95,9 @@
                                 <state key="normal" title="Set Color">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="setColorAlertWithText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU8-Qh-ZsD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-fi-aj8">
                                 <rect key="frame" x="187" y="584" width="70" height="30"/>
@@ -104,11 +107,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CT-qu-7Wy">
-                                <rect key="frame" x="274" y="588" width="32" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJi-5E-MMI">
+                                <rect key="frame" x="271" y="583" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Button" image="info.circle.fill" catalog="system"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -117,6 +122,7 @@
                     <connections>
                         <outlet property="blueLabelValue" destination="R33-dM-MDm" id="tdk-TP-cNK"/>
                         <outlet property="blueSlider" destination="gO4-aX-8Dy" id="IwK-1P-vAt"/>
+                        <outlet property="colorNameTextField" destination="RdW-a7-pAb" id="COg-sH-bhl"/>
                         <outlet property="greenLabelValue" destination="Eua-0C-GWd" id="4Y8-le-qkd"/>
                         <outlet property="greenSlider" destination="NBX-dD-6EA" id="NtZ-mj-eY2"/>
                         <outlet property="redLabelValue" destination="0hF-mz-r49" id="1ad-f9-thP"/>
@@ -128,7 +134,4 @@
             <point key="canvasLocation" x="150.72463768115944" y="154.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
-    </resources>
 </document>
