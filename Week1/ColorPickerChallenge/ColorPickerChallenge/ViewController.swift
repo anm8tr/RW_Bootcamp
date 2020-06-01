@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenLabelValue: UILabel!
     @IBOutlet weak var blueLabelValue: UILabel!
     
+    @IBOutlet weak var SegmentedOutlet: UISegmentedControl!
+    
+    @IBOutlet weak var circularImageView: UIView!
+    
+    
+    
     var red : Float = 0
     var green : Float = 0
     var blue : Float = 0
@@ -28,6 +34,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        circularImageView.layer.cornerRadius = circularImageView.frame.size.width/2
         
         redSlider.tag = 1
         greenSlider.tag = 2
@@ -59,33 +67,64 @@ class ViewController: UIViewController {
             break;
         }
 
-        self.view.backgroundColor =  UIColor(red: CGFloat( self.red/255.0), green: CGFloat(self.green/255.0), blue: CGFloat(self.blue/255.0), alpha: 1.0)
+        circularImageView.backgroundColor = UIColor(red: CGFloat( self.red/255.0), green: CGFloat(self.green/255.0), blue: CGFloat(self.blue/255.0), alpha: 1.0)
         
         
 }
     
-    @IBAction func setColorAlertWithText(_ sender: UIButton) {
+    @IBAction func setColorAlertWithText(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Set Color", message: "Enter a name for the color", preferredStyle: .alert)
-        alert.view.tintColor = .systemBlue
-        
-        alert.addTextField { textField in
-            textField.placeholder = "Enter color name"
+        switch SegmentedOutlet.selectedSegmentIndex {
+        case 0:
+            let alert = UIAlertController(title: "Set Color", message: "Enter a name for the color", preferredStyle: .alert)
+             alert.view.tintColor = .systemBlue
+             
+             alert.addTextField { textField in
+                 textField.placeholder = "Enter Custom Color Name"
+             }
+             
+             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+             
+            let confirmAction = UIAlertAction(title: "OK", style: .default) { _ in
+             self.colorNameTextField.text = alert.textFields?.first?.text ??  "Please enter a name"
+             
+             self.view.backgroundColor =  UIColor(red: CGFloat( self.red/255.0), green: CGFloat(self.green/255.0), blue: CGFloat(self.blue/255.0), alpha: 1.0)
+             
+                 }
+             alert.addAction(cancelAction)
+             alert.addAction(confirmAction)
+             
+             present(alert, animated: true, completion: nil)
+        case 1:
+             resetAll()
+             
+             view.backgroundColor =  UIColor(red: CGFloat( red/255.0), green: CGFloat(green/255.0), blue: CGFloat(blue/255.0), alpha: 1.0)
+        default:
+            break
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
-       let confirmAction = UIAlertAction(title: "OK", style: .default) { _ in
-        self.colorNameTextField.text = alert.textFields?.first?.text ??  "Please enter a name"
-            }
-        alert.addAction(cancelAction)
-        alert.addAction(confirmAction)
-        
-        present(alert, animated: true, completion: nil)
             
     }
     
+//    @IBAction func resetApp(_ sender: Any) {
+//
+//    }
     
+    func resetAll() {
+        red = 0
+        green = 0
+        blue = 0
+        redSlider.value = 0
+        greenSlider.value = 0
+        blueSlider.value = 0
+        redLabelValue.text = "0"
+        greenLabelValue.text = "0"
+        blueLabelValue.text = "0"
+        colorNameTextField.text = "My Custom Color"
+        
+        
+    }
     
 }
     

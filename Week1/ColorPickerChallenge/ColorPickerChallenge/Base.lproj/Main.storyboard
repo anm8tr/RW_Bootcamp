@@ -15,113 +15,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-aX-8Dy">
-                                <rect key="frame" x="107" y="501" width="200" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mA-2O-Yey">
+                                <rect key="frame" x="54" y="343" width="42.333333333333336" height="25.666666666666668"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="KXV-VE-MBX"/>
-                                    <action selector="redSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="H1H-bd-ywu"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="NBX-dD-6EA">
-                                <rect key="frame" x="107" y="427" width="200" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wbl-q8-0E6"/>
-                                    <action selector="redSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="EOj-7g-B5R"/>
-                                </connections>
-                            </slider>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.079394028178770171" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-kq-dzz">
-                                <rect key="frame" x="107" y="351" width="200" height="30"/>
+                                <rect key="frame" x="52" y="377" width="250" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yf2-vu-MXS"/>
                                     <action selector="redSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="JFQ-RT-WIy"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mA-2O-Yey">
-                                <rect key="frame" x="107" y="320" width="43" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.079394028178770171" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hF-mz-r49">
-                                <rect key="frame" x="255" y="320" width="70" height="25"/>
+                                <rect key="frame" x="316" y="377" width="35" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.01871025758" blue="0.01173828398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Color Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-a7-pAb">
+                                <rect key="frame" x="91.000000000000014" y="69" width="233.33333333333337" height="23.333333333333329"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-Bs-Ldo">
+                                <rect key="frame" x="20" y="800" width="374" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tbt-ug-L78"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Set Color"/>
+                                    <segment title="Reset"/>
+                                    <segment title="RGB Info"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="setColorAlertWithText:" destination="BYZ-38-t0r" eventType="valueChanged" id="9LC-um-TJu"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-hK-nFO">
+                                <rect key="frame" x="157.66666666666666" y="174.33333333333334" width="99.999999999999972" height="100.00000000000003"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Pi4-hX-OE6"/>
+                                    <constraint firstAttribute="width" constant="100" id="xzd-gX-U1O"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-Ki-LiW">
-                                <rect key="frame" x="107" y="398" width="66" height="26"/>
+                                <rect key="frame" x="54" y="440" width="66" height="25.666666666666671"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="NBX-dD-6EA">
+                                <rect key="frame" x="52" y="474" width="250" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wbl-q8-0E6"/>
+                                    <action selector="redSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="EOj-7g-B5R"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eua-0C-GWd">
+                                <rect key="frame" x="316" y="474" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akt-Ji-elV">
-                                <rect key="frame" x="109" y="476" width="49" height="26"/>
+                                <rect key="frame" x="54" y="531" width="48.333333333333336" height="25.666666666666657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                 <color key="textColor" red="0.050251929578996268" green="0.18305015301733329" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eua-0C-GWd">
-                                <rect key="frame" x="255" y="396" width="70" height="25"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-aX-8Dy">
+                                <rect key="frame" x="52" y="564" width="250" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="KXV-VE-MBX"/>
+                                    <action selector="redSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="H1H-bd-ywu"/>
+                                </connections>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R33-dM-MDm">
-                                <rect key="frame" x="255" y="476" width="70" height="25"/>
+                                <rect key="frame" x="316" y="564" width="35" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <color key="textColor" red="0.05025192958" green="0.18305015299999999" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-a7-pAb">
-                                <rect key="frame" x="118" y="254" width="179" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii9-KV-qum">
-                                <rect key="frame" x="109" y="584" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Set Color">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="setColorAlertWithText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU8-Qh-ZsD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-fi-aj8">
-                                <rect key="frame" x="187" y="584" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJi-5E-MMI">
-                                <rect key="frame" x="271" y="583" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Info">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Fa-Bs-Ldo" secondAttribute="bottom" constant="31" id="3BH-HN-i1C"/>
+                            <constraint firstItem="6Fa-Bs-Ldo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="52n-Da-fLS"/>
+                            <constraint firstItem="RdW-a7-pAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="VPj-bI-YKq"/>
+                            <constraint firstItem="cTD-hK-nFO" firstAttribute="top" secondItem="RdW-a7-pAb" secondAttribute="bottom" constant="82" id="a8P-17-Gl0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Fa-Bs-Ldo" secondAttribute="trailing" constant="20" id="gfU-dR-FAn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdW-a7-pAb" secondAttribute="trailing" constant="89.670000000000002" id="idO-Wy-H8Y"/>
+                            <constraint firstItem="RdW-a7-pAb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="jeY-D5-RAw"/>
+                            <constraint firstItem="cTD-hK-nFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157.66999999999999" id="sYq-NG-dRE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SegmentedOutlet" destination="6Fa-Bs-Ldo" id="ZR4-Gk-th2"/>
                         <outlet property="blueLabelValue" destination="R33-dM-MDm" id="tdk-TP-cNK"/>
                         <outlet property="blueSlider" destination="gO4-aX-8Dy" id="IwK-1P-vAt"/>
+                        <outlet property="circularImageView" destination="cTD-hK-nFO" id="Mvd-fB-kw5"/>
                         <outlet property="colorNameTextField" destination="RdW-a7-pAb" id="COg-sH-bhl"/>
                         <outlet property="greenLabelValue" destination="Eua-0C-GWd" id="4Y8-le-qkd"/>
                         <outlet property="greenSlider" destination="NBX-dD-6EA" id="NtZ-mj-eY2"/>
@@ -131,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150.72463768115944" y="154.6875"/>
+            <point key="canvasLocation" x="121.73913043478262" y="125.89285714285714"/>
         </scene>
     </scenes>
 </document>
