@@ -1,7 +1,7 @@
 # RW_Bootcamp_Week01
 ### RGB Color Slider Challenge
 
-![](https://github.com/anm8tr/RW_Bootcamp_Week01/blob/master/auth.jpg)
+![](https://github.com/anm8tr/RW_Bootcamp_Week001/blob/master/auth.jpg)
 ## Richard Garrison
 ##### Discord Username: TC anm8tr#2146
 
