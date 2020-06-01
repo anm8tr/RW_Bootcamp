@@ -31,17 +31,10 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hF-mz-r49">
-                                <rect key="frame" x="316" y="377" width="35" height="30"/>
+                                <rect key="frame" x="316" y="377" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.01871025758" blue="0.01173828398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Color Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-a7-pAb">
-                                <rect key="frame" x="91.000000000000014" y="69" width="233.33333333333337" height="23.333333333333329"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-Bs-Ldo">
@@ -60,12 +53,12 @@
                                     <action selector="setColorAlertWithText:" destination="BYZ-38-t0r" eventType="valueChanged" id="9LC-um-TJu"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-hK-nFO">
-                                <rect key="frame" x="157.66666666666666" y="174.33333333333334" width="99.999999999999972" height="100.00000000000003"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-hK-nFO">
+                                <rect key="frame" x="157.66666666666666" y="174.33333333333337" width="99.999999999999972" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Pi4-hX-OE6"/>
-                                    <constraint firstAttribute="width" constant="100" id="xzd-gX-U1O"/>
+                                    <constraint firstAttribute="width" constant="100" id="7WO-Af-Vni"/>
+                                    <constraint firstAttribute="height" constant="100" id="CiH-Oz-JCD"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-Ki-LiW">
@@ -84,7 +77,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eua-0C-GWd">
-                                <rect key="frame" x="316" y="474" width="35" height="30"/>
+                                <rect key="frame" x="316" y="474" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,10 +99,19 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R33-dM-MDm">
-                                <rect key="frame" x="316" y="564" width="35" height="30"/>
+                                <rect key="frame" x="316" y="564" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <color key="textColor" red="0.05025192958" green="0.18305015299999999" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom Color Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-a7-pAb">
+                                <rect key="frame" x="91" y="58" width="233" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="gCC-pn-hYA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -117,12 +119,13 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Fa-Bs-Ldo" secondAttribute="bottom" constant="31" id="3BH-HN-i1C"/>
                             <constraint firstItem="6Fa-Bs-Ldo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="52n-Da-fLS"/>
-                            <constraint firstItem="RdW-a7-pAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="VPj-bI-YKq"/>
-                            <constraint firstItem="cTD-hK-nFO" firstAttribute="top" secondItem="RdW-a7-pAb" secondAttribute="bottom" constant="82" id="a8P-17-Gl0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdW-a7-pAb" secondAttribute="trailing" constant="90" id="9pi-g0-fGt"/>
+                            <constraint firstItem="cTD-hK-nFO" firstAttribute="top" secondItem="RdW-a7-pAb" secondAttribute="bottom" constant="79.329999999999998" id="TUC-BL-bHz"/>
+                            <constraint firstItem="RdW-a7-pAb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="dJu-to-PMe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Fa-Bs-Ldo" secondAttribute="trailing" constant="20" id="gfU-dR-FAn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdW-a7-pAb" secondAttribute="trailing" constant="89.670000000000002" id="idO-Wy-H8Y"/>
-                            <constraint firstItem="RdW-a7-pAb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="jeY-D5-RAw"/>
-                            <constraint firstItem="cTD-hK-nFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157.66999999999999" id="sYq-NG-dRE"/>
+                            <constraint firstItem="RdW-a7-pAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="ppb-sl-B5G"/>
+                            <constraint firstItem="cTD-hK-nFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tzX-j8-nme"/>
+                            <constraint firstItem="cTD-hK-nFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157.66999999999999" id="vHC-ld-gSB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

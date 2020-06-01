@@ -97,8 +97,9 @@ class ViewController: UIViewController {
              present(alert, animated: true, completion: nil)
         case 1:
              resetAll()
-             
+             circularImageView.backgroundColor = UIColor(red: CGFloat( self.red/255.0), green: CGFloat(self.green/255.0), blue: CGFloat(self.blue/255.0), alpha: 1.0)
              view.backgroundColor =  UIColor(red: CGFloat( red/255.0), green: CGFloat(green/255.0), blue: CGFloat(blue/255.0), alpha: 1.0)
+             
         default:
             break
         }
@@ -112,9 +113,9 @@ class ViewController: UIViewController {
 //    }
     
     func resetAll() {
-        red = 0
-        green = 0
-        blue = 0
+        red = 255
+        green = 255
+        blue = 255
         redSlider.value = 0
         greenSlider.value = 0
         blueSlider.value = 0
@@ -122,8 +123,6 @@ class ViewController: UIViewController {
         greenLabelValue.text = "0"
         blueLabelValue.text = "0"
         colorNameTextField.text = "My Custom Color"
-        
-        
     }
     
 }
